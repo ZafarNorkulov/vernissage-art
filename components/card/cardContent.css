@@ -1,0 +1,219 @@
+.mainContents {
+  padding: 40px 20px;
+  background-color: white;
+}
+.cardContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.mainImage {
+  width: 100%;
+
+  object-fit: cover;
+}
+.cardDesc p {
+  display: inline;
+}
+.cardDesc a {
+  color: #7289da;
+  text-decoration: underline;
+}
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%; 
+}
+.cardTop {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 30px;
+  gap: 20px;
+}
+.cardTop p {
+  display: inline;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  width: 100%;
+}
+.title-text {
+  display: flex;
+  align-items: baseline;
+}
+
+.title-text > div {
+  display: inline;
+}
+.cardTop .title-text > span {
+  font-weight: 700;
+}
+.price-cart {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.price {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28.8px;
+  text-align: left;
+  color: #e3c05c;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.to-cart {
+  font-size: 16px;
+  text-align: center;
+  width: 148px;
+  background-color: #e3c05c;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 0;
+  font-family: var(---tilda-sans), sans-serif;
+}
+.more-images {
+  max-width: 610px;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  /* -ms-overflow-style: none; IE and Edge */
+  scrollbar-width: none;
+}
+.more-images::-webkit-scrollbar {
+  display: none;
+}
+
+.more-images img {
+  width: 100%;
+  object-fit: contain;
+}
+.description {
+  margin-top: 2rem;
+}
+.similars {
+  margin-top: 100px;
+}
+.similarCards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  justify-content: space-around;
+  justify-items: center;
+  gap: 20px;
+}
+.title {
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 49.03px;
+}
+@media (max-width: 1000px) {
+  .mainImage {
+    height: 500px;
+    width: auto;
+    margin: 0 auto;
+  }
+  .cardContent {
+    grid-template-columns: 1fr;
+  }
+  .cardInfo {
+    padding: 0;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .cardTop {
+    padding: 0;
+  }
+  .more-images {
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .cardContent {
+    gap: 10px;
+  }
+  .mainContents {
+    padding: 20px 10px;
+  }
+  .mainImage {
+    height: 370px;
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  .more-images {
+    gap: 10px;
+    margin: 0 auto;
+    width: 85vw;
+  }
+  .more-images img {
+    width: 99px;
+    height: 99px;
+    object-fit: contain;
+  }
+  .cardTop {
+    gap: 10px;
+  }
+  .cardTop p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 0;
+  }
+  .cardTop span {
+    font-size: 16px;
+  }
+  .btn-group {
+    gap: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .similars {
+    margin-top: 40px;
+  }
+  .similarCards {
+    margin-top: 20px;
+  }
+  .description {
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+  .btn-group {
+    justify-content: center;
+  }
+}
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #e3c05c;
+  /* font-family: "Noto serif", serif; */
+  background-color: transparent;
+  border: none;
+  margin-bottom: 8px;
+}
+@media (max-width: 400px) {
+  .mainImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
