@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  output: "export",
+  output: "server",
   reactStrictMode: true,
   trailingSlash: true,
   images: {

@@ -7,7 +7,6 @@ import PageClient from "./page.client";
 
 const Page = () => {
 
-  
   return (
     <div className="card">
       <PageClient />
